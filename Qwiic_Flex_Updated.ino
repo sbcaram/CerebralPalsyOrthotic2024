@@ -66,9 +66,9 @@ void loop() {
     command = Serial.readStringUntil('\n');
 
     if(command.equals("thumb")){
-      thumbServo.write(180);
+      pinkyServo.write(180);
       delay(750);
-      thumbServo.write(90);
+      pinkyServo.write(90);
       Serial.println("You turned servo one 180°");
     } else if(command.equals("pointer")){
       pointerServo.write(180);
@@ -81,9 +81,9 @@ void loop() {
       middleServo.write(90);
       Serial.println("You turned servo three 180°");
     } else if(command.equals("ring")){
-      ringServo.write(180);
+      thumbServo.write(180);
       delay(750);
-      ringServo.write(90);
+      thumbServo.write(90);
       Serial.println("You turned servo four 180°");
     } else if(command.equals("pinky")){
       pinkyServo.write(180);
